@@ -6,202 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Yashil Makon Baraka</title>
     <style>
-        html {
-            font-size: calc(min(100vw, 390px) / 390 * 16)
-        }
-
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box
-        }
-
-        body {
-            font-family: sans-serif;
-            background: linear-gradient(179.32deg, #063A28 .59%, #038056 99.41%);
-            color: #fff
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block
-        }
-
-        .webinar {
-            max-width: 390px;
-            width: 100%;
-            margin: 0 auto;
-            text-align: center;
-            padding-bottom: 1.875rem
-        }
-
-        .webinar__head {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: .5rem 1.25rem;
-            border-bottom: 1px solid #FED38B;
-            margin-bottom: 1.375rem
-        }
-
-        .webinar__date {
-            display: flex;
-            align-items: center;
-            gap: .375rem
-        }
-
-        .webinar__icon {
-            width: 1.5625rem;
-            height: 1.5625rem
-        }
-
-        .webinar__time {
-            font-family: "Poppins", sans-serif;
-            font-size: 1rem;
-            color: white
-        }
-
-        .webinar__logo {
-            width: 1.75rem;
-            height: 2.125rem
-        }
-
-        .webinar__title {
-            font-family: "Bebas Neue", sans-serif;
-            font-size: 2.25rem;
-            font-weight: 400;
-            line-height: 114%
-        }
-
-        .webinar__text {
-            text-transform: uppercase;
-            font-size: 1.125rem;
-            font-weight: 500;
-            line-height: 120%;
-            margin-bottom: 34px;
-            color: #FED38B
-        }
-
-        .webinar__hero {
-            position: relative
-        }
-
-        .webinar__bg {
-            position: absolute;
-            left: 50%;
-            top: 0;
-            transform: translateX(-50%);
-            width: 100%;
-            height: auto
-        }
-
-        .webinar__hero-content {
-            position: relative;
-            z-index: 1
-        }
-
-        .webinar__speaker {
-            display: flex;
-            width: 15.375rem;
-            height: auto;
-            margin: 0 auto
-        }
-
-        .webinar__btn {
-            display: flex;
-            align-items: center;
-            gap: .6875rem;
-            padding: 1.8125rem .625rem;
-            background: #F4B758;
-            box-shadow: 0 .25rem 0 0 #D59D46, .9375rem .625rem .66875rem 0 #FFFFFF4D inset, -.9375rem -.75rem .74375rem 0 #FFFFFF40 inset;
-            justify-content: center;
-            border-radius: 6.1875rem;
-            font-family: "Bebas Neue", sans-serif;
-            text-decoration: none;
-            color: #0A4F37;
-            font-weight: 400;
-            font-size: 1.75rem;
-            line-height: 100%;
-            letter-spacing: .04em;
-            max-width: 22.875rem;
-            width: 100%;
-            margin: -3.4375rem auto 1.5rem;
-            position: relative;
-            z-index: 1
-        }
-
-        .webinar__btn-icon {
-            width: 1.375rem;
-            height: 1.75rem
-        }
-
-        .webinar__countdown {
-            font-family: "Buyan", sans-serif;
-            font-weight: 700;
-            font-size: 2.1875rem;
-            line-height: 114%;
-            margin-bottom: 1.375rem
-        }
-
-        .webinar__subtitle {
-            font-weight: 700;
-            font-size: 1.125rem;
-            line-height: 114%;
-            text-transform: uppercase;
-            margin-bottom: 1.125rem
-        }
-
-        .webinar__list {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            margin-left: auto;
-            margin-right: auto;
-            justify-content: center;
-            align-items: center;
-            gap: .5rem;
-            text-align: left;
-            max-width: 315px;
-            width: 100%;
-            margin: 0 auto .75rem
-        }
-
-        .webinar__item {
-            background-color: #008357;
-            border: 1px solid #FED38B;
-            border-radius: 1.125rem;
-            padding: .9375rem 2.25rem;
-            max-width: 315px;
-            width: 100%;
-            position: relative;
-            min-height: 4.625rem
-        }
-
-        .webinar__check {
-            position: absolute;
-            left: -6%;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 2.75rem;
-            height: 2.75rem
-        }
-
-        .webinar__benefit {
-            line-height: 140%;
-            font-size: .875rem
-        }
-
-        @media (max-width:340px) {
-            .webinar__item {
-                max-width: 275px;
-            }
-        }
+        html{font-size:calc(min(100vw, 390px) / 390 * 16)}*{padding:0;margin:0;box-sizing:border-box}body{font-family:sans-serif;background:linear-gradient(179.32deg,#063A28 .59%,#038056 99.41%);color:#fff}img{max-width:100%;height:auto;display:block}.webinar{max-width:390px;width:100%;margin:0 auto;text-align:center;padding-bottom:1.875rem}.webinar__head{display:flex;align-items:center;justify-content:space-between;padding:.5rem 1.25rem;border-bottom:1px solid #FED38B;margin-bottom:1.375rem}.webinar__date{display:flex;align-items:center;gap:.375rem}.webinar__icon{width:1.5625rem;height:1.5625rem}.webinar__time{font-family:"Poppins",sans-serif;font-size:1rem;color:#fff}.webinar__logo{width:1.75rem;height:2.125rem}.webinar__title{font-family:"Bebas Neue",sans-serif;font-size:2.25rem;font-weight:400;line-height:114%}.webinar__text{text-transform:uppercase;font-size:1.125rem;font-weight:500;line-height:120%;margin-bottom:34px;color:#FED38B}.webinar__hero{position:relative}.webinar__bg{position:absolute;left:50%;top:0;transform:translateX(-50%);width:100%;height:auto}.webinar__hero-content{position:relative;z-index:1}.webinar__speaker{display:flex;width:15.375rem;height:auto;margin:0 auto}.webinar__btn{display:flex;align-items:center;gap:.6875rem;padding:1.8125rem .625rem;background:#F4B758;box-shadow:0 .25rem 0 0 #D59D46,.9375rem .625rem .66875rem 0 #FFFFFF4D inset,-.9375rem -.75rem .74375rem 0 #FFFFFF40 inset;justify-content:center;border-radius:6.1875rem;font-family:"Bebas Neue",sans-serif;text-decoration:none;color:#0A4F37;font-weight:400;font-size:1.75rem;line-height:100%;letter-spacing:.04em;max-width:22.875rem;width:100%;margin:-3.4375rem auto 1.5rem;position:relative;z-index:1}.webinar__btn-icon{width:1.375rem;height:1.75rem}.webinar__countdown{font-family:"Buyan",sans-serif;font-weight:700;font-size:2.1875rem;line-height:114%;margin-bottom:1.375rem}.webinar__subtitle{font-weight:700;font-size:1.125rem;line-height:114%;text-transform:uppercase;margin-bottom:1.125rem}.webinar__list{list-style:none;display:flex;flex-direction:column;margin-left:auto;margin-right:auto;justify-content:center;align-items:center;gap:.5rem;text-align:left;max-width:315px;width:100%;margin:0 auto .75rem}.webinar__item{background-color:#008357;border:1px solid #FED38B;border-radius:1.125rem;padding:.9375rem 2.25rem;max-width:315px;width:100%;position:relative;min-height:4.625rem}.webinar__check{position:absolute;left:-6%;top:50%;transform:translateY(-50%);width:2.75rem;height:2.75rem}.webinar__benefit{line-height:140%;font-size:.875rem}@media (max-width:340px){.webinar__item{max-width:275px}}
     </style>
     <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
     <noscript>
         <link rel="stylesheet" href="./css/main.css">
     </noscript>
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1148846250715145');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1148846250715145&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
