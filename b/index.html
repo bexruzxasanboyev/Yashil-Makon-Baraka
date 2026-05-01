@@ -41,7 +41,7 @@
             <div class="webinar__hero-content">
                 <img class="webinar__speaker" src="./images/speaker.avif" alt="speaker" loading="lazy" decoding="async"
                     width="246" height="358">
-                <a class="webinar__btn webinar__btn--floating" href="#">
+                <a class="webinar__btn webinar__btn--floating" href="https://t.me/+Lf9Hit18IlNkYjRi">
                     TAQDIMOTdA QATNASHISH
                     <img class="webinar__btn-icon" src="./images/btn-icon.avif" alt="icon" loading="lazy"
                         decoding="async" width="22" height="28">
@@ -49,7 +49,7 @@
             </div>
         </div>
 
-        <p class="webinar__countdown" id="countdown" data-target="2026-05-12T20:00:00+05:00">00:00:00:00</p>
+        <p class="webinar__countdown" id="countdown" data-duration="120">02:00</p>
 
         <h2 class="webinar__subtitle">Loyihaning afzalliklari</h2>
         <ul class="webinar__list">
@@ -76,30 +76,14 @@
             </li>
         </ul>
 
-        <a class="webinar__btn" href="#" style="margin: 0 auto 0;">
+        <a class="webinar__btn" href="https://t.me/+Lf9Hit18IlNkYjRi" style="margin: 0 auto 0;">
             TAQDIMOTdA QATNASHISH
             <img class="webinar__btn-icon" src="./images/btn-icon.avif" alt="icon" loading="lazy" decoding="async"
                 width="22" height="28">
         </a>
     </main>
-    <script>
-        (function () {
-            var el = document.getElementById('countdown');
-            if (!el) return;
-            var target = new Date(el.dataset.target).getTime();
-            var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
-            function tick() {
-                var diff = target - Date.now();
-                if (diff <= 0) { el.textContent = '00:00:00:00'; return; }
-                var d = Math.floor(diff / 86400000);
-                var h = Math.floor(diff / 3600000) % 24;
-                var m = Math.floor(diff / 60000) % 60;
-                var s = Math.floor(diff / 1000) % 60;
-                el.textContent = pad(d) + ':' + pad(h) + ':' + pad(m) + ':' + pad(s);
-                requestAnimationFrame(function () { setTimeout(tick, 1000); });
-            }
-            tick();
-        })();
+    <script defer>
+      !function(){var t=document.getElementById("countdown");if(!t)return;var e=Date.now()+1e3*(parseInt(t.dataset.duration,10)||120),n=function(t){return t<10?"0"+t:""+t};!function o(){var a=e-Date.now();if(a<=0){t.textContent="00:00";return}var r=Math.floor(a/6e4),f=Math.floor(a/1e3)%60;t.textContent=n(r)+":"+n(f);setTimeout(o,1e3)}()}();
     </script>
 </body>
 
