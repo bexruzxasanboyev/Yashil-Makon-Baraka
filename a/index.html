@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashil Makon Baraka</title>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; } body { background: linear-gradient(173.06deg, #0A4C35 0%, #038056 100%); } .hero { padding-top: 0; padding-bottom: 17px; } .hero__container { max-width: 390px; margin: 0 auto; padding: 0 10px; position: relative; } .hero__header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 31px; background-color: #29765B; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; padding: 6px 28px; border: 1px solid #FED38B; border-top: 0; margin-bottom: 31px; } .hero__date { display: flex; align-items: center; gap: 6px; } .hero__date-text { font-family: Poppins, sans-serif; font-weight: 500; font-size: 16px; line-height: 100%; letter-spacing: -2%; text-align: center; color: white; } .hero__title { font-family: Inter, sans-serif; font-weight: 600; font-size: clamp(17px, 5.3vw, 21px); line-height: 27.9px; letter-spacing: 3%; text-transform: uppercase; margin-bottom: 12px; color: white; } .hero__title span { color: #FED38B; } .hero__slider { position: relative; width: 100%; overflow: hidden; border-radius: 16px; margin-bottom: 20px; } .hero__slider-track { display: flex; width: 400%; animation: heroSlide 16s infinite; } .hero__slide { width: 25%; height: auto; flex-shrink: 0; object-fit: cover; border-radius: 16px; } @keyframes heroSlide { 0%, 20% { transform: translateX(0); } 25%, 45% { transform: translateX(-25%); } 50%, 70% { transform: translateX(-50%); } 75%, 95% { transform: translateX(-75%); } 100% { transform: translateX(0); } } .hero__pagination { position: absolute; left: 50%; bottom: 12px; transform: translateX(-50%); display: flex; align-items: center; gap: 6px; z-index: 2; } .hero__bullet { display: block; width: 18px; height: 8px; border-radius: 999px; border: 1.5px solid white; background: transparent; animation: heroBullet 12s infinite; } .hero__bullet:nth-child(1) { animation-delay: 0s; } .hero__bullet:nth-child(2) { animation-delay: 4s; } .hero__bullet:nth-child(3) { animation-delay: 8s; } .hero__bullet:nth-child(4) { animation-delay: 12s; } @keyframes heroBullet { 0%, 25% { width: 28px; background: white; } 25.01%, 100% { width: 18px; background: transparent; } } .hero__btn { max-width: 363px; width: 100%; border-radius: 20px; background: linear-gradient(90deg, #F4B759 0%, #FFD89C 50%, #F4B759 100%); box-shadow: 0px 6px 0px 0px #C38249; padding: 29px 0 28px 0; display: flex; align-items: center; justify-content: center; gap: 8px; font-family: Inter, sans-serif; font-weight: 700; text-decoration: none; font-size: clamp(17px, 5vw, 18px); border: none; margin-bottom: 32px; line-height: 27.9px; letter-spacing: 3%; text-align: center; text-transform: uppercase; color: #094F37; } .benefits__title { font-family: Inter, sans-serif; font-weight: 700; font-size: 18px; line-height: 114%; color: white; text-align: center; text-transform: uppercase; margin-bottom: 12px; } .benefits__list { display: flex; flex-direction: column; gap: 8px; margin: 0 auto; justify-content: center; margin-bottom: 20px; align-items: center; } .benefits__item { border-top-left-radius: 25px; border-bottom-right-radius: 25px; border: 1px solid #FFFFFF; max-width: 335px; width: 100%; padding: 13px 0 7.6px 9px; display: flex; align-items: center; position: relative; gap: 16px; } .benefits__text { font-family: Montserrat, sans-serif; font-weight: 300; font-size: 16px; line-height: 130%; color: white; } .benefits__line { top: -3.5px; right: -3.5px; position: absolute; } .benefits__lines { bottom: -3.2px; left: -3.5px; transform: rotate(180deg); position: absolute; }
+    </style>
+
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="./css/main.css">
+    </noscript>
+</head>
+
+<body>
+    <section class="hero">
+        <div class="hero__container">
+            <div class="hero__header">
+                <div class="hero__date">
+                    <img class="hero__date-icon" src="../b/images/Calendar.avif" loading="lazy" decoding="async"
+                        width="25" height="25" alt="calendar">
+                    <p class="hero__date-text">12-MAY</p>
+                </div>
+
+                <img class="hero__logo" src="../b/images/logo.avif" loading="lazy" decoding="async" width="28" height="34"
+                    alt="logo">
+
+                <div class="hero__date">
+                    <img class="hero__date-icon" src="../b/images/Clock.avif" loading="lazy" decoding="async" width="25"
+                        height="25" alt="calendar">
+                    <p class="hero__date-text">20:00</p>
+                </div>
+            </div>
+
+            <h1 class="hero__title">Guliston shahri markazidagi <br>
+                <span class="hero__title-accent">Yashil makon loyihasidan <br> Premium classdagi xonadon</span> <br>
+                xarid qilish imkoniyati
+            </h1>
+
+            <div class="hero__slider">
+                <div class="hero__slider-track">
+                    <img class="hero__slide" src="./images/slide/1.avif" loading="lazy" decoding="async" width="376"
+                        height="347" alt="slide">
+                    <img class="hero__slide" src="./images/slide/2.avif" loading="lazy" decoding="async" width="376"
+                        height="347" alt="slide">
+                    <img class="hero__slide" src="./images/slide/3.avif" loading="lazy" decoding="async" width="376"
+                        height="347" alt="slide">
+                    <img class="hero__slide" src="./images/slide/4.avif" loading="lazy" decoding="async" width="376"
+                        height="347" alt="slide">
+                </div>
+
+                <div class="hero__pagination">
+                    <span class="hero__bullet"></span>
+                    <span class="hero__bullet"></span>
+                    <span class="hero__bullet"></span>
+                    <span class="hero__bullet"></span>
+                </div>
+            </div>
+
+            <a class="hero__btn" href="#">
+                taqdimotda qatnashish
+                <img class="hero__btn-icon" src="/images/cursor.png" loading="lazy" decoding="async" width="22"
+                    height="28" alt="cursor">
+            </a>
+
+            <div class="benefits">
+                <h2 class="benefits__title">Bu qulayliklar taqdimot <br> ishtirokchilari uchun:</h2>
+
+                <ul class="benefits__list">
+                    <li class="benefits__item">
+                        <img class="benefits__icon" src="./images/1.avif" loading="lazy" decoding="async" width="54"
+                            height="54" alt="icon">
+                        <p class="benefits__text"><b>Toshkent</b> andozasidagi <br> loyiha</p>
+
+                        <img class="benefits__line" src="./images/line.png" loading="lazy" decoding="async" width="37"
+                            height="37" alt="line">
+                        <img class="benefits__lines" src="./images/line.png" loading="lazy" decoding="async" width="37"
+                            height="37" alt="line">
+                    </li>
+                    <li class="benefits__item">
+                        <img class="benefits__icon" src="./images/2.avif" loading="lazy" decoding="async" width="54"
+                            height="54" alt="icon">
+                        <p class="benefits__text">Markazlashgan <b>ko‘ngil <br> ochar sayilgohlar</b></p>
+
+                           <img class="benefits__line" src="./images/line.png" loading="lazy" decoding="async" width="37"
+                            height="37" alt="line">
+                        <img class="benefits__lines" src="./images/line.png" loading="lazy" decoding="async" width="37"
+                            height="37" alt="line">
+                    </li>
+                    <li class="benefits__item">
+                        <img class="benefits__icon" src="./images/3.avif" loading="lazy" decoding="async" width="54"
+                            height="54" alt="icon">
+                        <p class="benefits__text"><b>60 oyga bo‘lib to‘lashga</b> <br>
+                            xarid qilish imkoniyati</p>
+                               <img class="benefits__line" src="./images/line.png" loading="lazy" decoding="async" width="37"
+                            height="37" alt="line">
+                        <img class="benefits__lines" src="./images/line.png" loading="lazy" decoding="async" width="37"
+                            height="37" alt="line">
+                    </li>
+                    <li class="benefits__item">
+                        <img class="benefits__icon" src="./images/4.avif" loading="lazy" decoding="async" width="54"
+                            height="54" alt="icon">
+                        <p class="benefits__text"><b>Bolalar o‘yingohlari, kafe, restoran, Bouling, fitnes zallar</b>
+                        </p>
+                           <img class="benefits__line" src="./images/line.png" loading="lazy" decoding="async" width="37"
+                            height="37" alt="line">
+                        <img class="benefits__lines" src="./images/line.png" loading="lazy" decoding="async" width="37"
+                            height="37" alt="line">
+                    </li>
+                </ul>
+            </div>
+
+            <a class="hero__btn" href="#">
+                taqdimotda qatnashish
+                <img class="hero__btn-icon" src="/images/cursor.png" loading="lazy" decoding="async" width="22"
+                    height="28" alt="cursor">
+            </a>
+        </div>
+    </section>
+</body>
+
+</html>

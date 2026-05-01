@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Yashil Makon Baraka</title>
+    <style>
+      html { font-size: calc(min(100vw, 390px) / 390 * 16) } * { padding: 0; margin: 0; box-sizing: border-box } body { font-family: sans-serif; background: linear-gradient(179.32deg, #063A28 .59%, #038056 99.41%); color: #fff } img { max-width: 100%; height: auto; display: block } .webinar { max-width: 390px; width: 100%; margin: 0 auto; text-align: center; padding-bottom: 1.875rem } .webinar__head { display: flex; align-items: center; justify-content: space-between; padding: .5rem 1.25rem; border-bottom: 1px solid #FED38B; margin-bottom: 1.375rem } .webinar__date { display: flex; align-items: center; gap: .375rem } .webinar__icon { width: 1.5625rem; height: 1.5625rem } .webinar__time { font-family: "Poppins", sans-serif; font-size: 1rem; color: white } .webinar__logo { width: 1.75rem; height: 2.125rem } .webinar__title { font-family: "Bebas Neue", sans-serif; font-size: 2.25rem; font-weight: 400; line-height: 114% } .webinar__text { text-transform: uppercase; font-size: 1.125rem; font-weight: 500; line-height: 120%; margin-bottom: 34px; color: #FED38B } .webinar__hero { position: relative } .webinar__bg { position: absolute; left: 50%; top: 0; transform: translateX(-50%); width: 100%; height: auto } .webinar__hero-content { position: relative; z-index: 1 } .webinar__speaker { display: flex; width: 15.375rem; height: auto; margin: 0 auto } .webinar__btn { display: flex; align-items: center; gap: .6875rem; padding: 1.8125rem .625rem; background: #F4B758; box-shadow: 0 .25rem 0 0 #D59D46, .9375rem .625rem .66875rem 0 #FFFFFF4D inset, -.9375rem -.75rem .74375rem 0 #FFFFFF40 inset; justify-content: center; border-radius: 6.1875rem; font-family: "Bebas Neue", sans-serif; text-decoration: none; color: #0A4F37; font-weight: 400; font-size: 1.75rem; line-height: 100%; letter-spacing: .04em; max-width: 22.875rem; width: 100%; margin: -3.4375rem auto 1.5rem; position: relative; z-index: 1 } .webinar__btn-icon { width: 1.375rem; height: 1.75rem } .webinar__countdown { font-family: "Buyan", sans-serif; font-weight: 700; font-size: 2.1875rem; line-height: 114%; margin-bottom: 1.375rem } .webinar__subtitle { font-weight: 700; font-size: 1.125rem; line-height: 114%; text-transform: uppercase; margin-bottom: 1.125rem } .webinar__list { list-style: none; display: flex; flex-direction: column; margin-left: auto; margin-right: auto; justify-content: center; align-items: center; gap: .5rem; text-align: left; max-width: 315px; width: 100%; margin: 0 auto .75rem } .webinar__item { background-color: #008357; border: 1px solid #FED38B; border-radius: 1.125rem; padding: .9375rem 2.25rem; max-width: 315px; width: 100%; position: relative; min-height: 4.625rem } .webinar__check { position: absolute; left: -6%; top: 50%; transform: translateY(-50%); width: 2.75rem; height: 2.75rem } .webinar__benefit { line-height: 140%; font-size: .875rem }
+    </style>
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="./css/main.css">
+    </noscript>
+</head>
+
+<body>
+    <main class="webinar">
+        <div class="webinar__head">
+            <div class="webinar__date">
+                <img class="webinar__icon" src="./images/Calendar.avif" alt="calendar" loading="lazy" decoding="async"
+                    width="25" height="25">
+                <p class="webinar__time">12-MAY</p>
+            </div>
+            <img class="webinar__logo" src="./images/logo.avif" alt="logo" loading="lazy" decoding="async" width="28"
+                height="34">
+            <div class="webinar__date">
+                <img class="webinar__icon" src="./images/Clock.avif" alt="clock" loading="lazy" decoding="async"
+                    width="25" height="25">
+                <p class="webinar__time">20:00</p>
+            </div>
+        </div>
+
+        <h1 class="webinar__title">Guliston shahar markazidan</h1>
+        <p class="webinar__text">eng baland premium classdagi <br> Yashil makon loyihasidan eng katta <br> chegirmada
+            xonadon xarid qiling!</p>
+
+        <div class="webinar__hero">
+            <img class="webinar__bg" src="./images/bg.avif" alt="bg" loading="lazy" decoding="async" width="390"
+                height="442">
+            <div class="webinar__hero-content">
+                <img class="webinar__speaker" src="./images/speaker.avif" alt="speaker" loading="lazy" decoding="async"
+                    width="246" height="358">
+                <a class="webinar__btn webinar__btn--floating" href="#">
+                    TAQDIMOTdA QATNASHISH
+                    <img class="webinar__btn-icon" src="./images/btn-icon.avif" alt="icon" loading="lazy"
+                        decoding="async" width="22" height="28">
+                </a>
+            </div>
+        </div>
+
+        <p class="webinar__countdown" id="countdown" data-target="2026-05-12T20:00:00+05:00">00:00:00:00</p>
+
+        <h2 class="webinar__subtitle">Loyihaning afzalliklari</h2>
+        <ul class="webinar__list">
+            <li class="webinar__item">
+                <img class="webinar__check" src="./images/check.avif" alt="check" loading="lazy" decoding="async"
+                    width="44" height="44">
+                <p class="webinar__benefit">Guliston shahrida eng baland <br> loyiha</p>
+            </li>
+            <li class="webinar__item">
+                <img class="webinar__check" src="./images/check.avif" alt="check" loading="lazy" decoding="async"
+                    width="44" height="44">
+                <p class="webinar__benefit">2 qavatli savdo markazi, ayollar va <br> erkaklar uchun alohida Sport zali
+                </p>
+            </li>
+            <li class="webinar__item">
+                <img class="webinar__check" src="./images/check.avif" alt="check" loading="lazy" decoding="async"
+                    width="44" height="44">
+                <p class="webinar__benefit">"Tashkent City" andozasidagi ulkan <br> markazlashgan sayilgoh va park</p>
+            </li>
+            <li class="webinar__item">
+                <img class="webinar__check" src="./images/check.avif" alt="check" loading="lazy" decoding="async"
+                    width="44" height="44">
+                <p class="webinar__benefit">Aholi uchun maxsus poliklinika <br> va bank xizmatlari</p>
+            </li>
+        </ul>
+
+        <a class="webinar__btn" href="#" style="margin: 0 auto 0;">
+            TAQDIMOTdA QATNASHISH
+            <img class="webinar__btn-icon" src="./images/btn-icon.avif" alt="icon" loading="lazy" decoding="async"
+                width="22" height="28">
+        </a>
+    </main>
+    <script>
+        (function () {
+            var el = document.getElementById('countdown');
+            if (!el) return;
+            var target = new Date(el.dataset.target).getTime();
+            var pad = function (n) { return n < 10 ? '0' + n : '' + n; };
+            function tick() {
+                var diff = target - Date.now();
+                if (diff <= 0) { el.textContent = '00:00:00:00'; return; }
+                var d = Math.floor(diff / 86400000);
+                var h = Math.floor(diff / 3600000) % 24;
+                var m = Math.floor(diff / 60000) % 60;
+                var s = Math.floor(diff / 1000) % 60;
+                el.textContent = pad(d) + ':' + pad(h) + ':' + pad(m) + ':' + pad(s);
+                requestAnimationFrame(function () { setTimeout(tick, 1000); });
+            }
+            tick();
+        })();
+    </script>
+</body>
+
+</html>
