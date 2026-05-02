@@ -85,7 +85,7 @@
     <script defer>
         !function () { var t = document.getElementById("countdown"); if (!t) return; var e = Date.now() + 1e3 * (parseInt(t.dataset.duration, 10) || 120), n = function (t) { return t < 10 ? "0" + t : "" + t }; !function o() { var a = e - Date.now(); if (a <= 0) { t.textContent = "00:00"; return } var r = Math.floor(a / 6e4), f = Math.floor(a / 1e3) % 60; t.textContent = n(r) + ":" + n(f); setTimeout(o, 1e3) }() }();
         
-        document.querySelectorAll(".buybtn").forEach(function(btn){btn.addEventListener("click",function(e){if("function"==typeof fbq){try{fbq("track","Purchase",{value:15e5,currency:"UZS",content_name:"Course name"})}catch(err){console.warn("Pixel skipped:",err)}}var href=btn.getAttribute("href");if(href&&!e.defaultPrevented&&!btn.target){e.preventDefault();setTimeout(function(){window.location.href=href},300)}})});
+        document.querySelectorAll(".buybtn").forEach(function(btn){btn.addEventListener("click",function(e){console.log("[buybtn] click — fbq:",typeof fbq);if("function"==typeof fbq){try{fbq("track","Purchase",{value:15e5,currency:"UZS",content_name:"Course name"});console.log("[buybtn] Purchase sent")}catch(err){console.warn("Pixel skipped:",err)}}else{console.warn("[buybtn] fbq not loaded yet")}var href=btn.getAttribute("href");if(href&&btn.tagName==="A"&&!e.defaultPrevented&&!btn.target){e.preventDefault();setTimeout(function(){window.location.href=href},300)}})});
     </script>
 <!-- Meta Pixel Code -->
 <script defer>
