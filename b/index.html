@@ -48,9 +48,7 @@
                 </a>
             </div>
         </div>
-
         <p class="webinar__countdown" id="countdown" data-duration="120">02:00</p>
-
         <h2 class="webinar__subtitle">Loyihaning afzalliklari</h2>
         <ul class="webinar__list">
             <li class="webinar__item">
@@ -88,16 +86,8 @@
         document.addEventListener("click", function (e) {
             var btn = e.target.closest(".buybtn");
             if (!btn) return;
-            console.log("[buybtn] click detected — fbq type:", typeof fbq);
             if (typeof fbq === "function") {
-                try {
-                    fbq("track", "Purchase", { value: 1500000, currency: "UZS", content_name: "Course name" });
-                    console.log("[buybtn] ✅ Purchase event sent to Meta Pixel");
-                } catch (err) {
-                    console.warn("[buybtn] ❌ Pixel error:", err);
-                }
-            } else {
-                console.warn("[buybtn] ⚠️ fbq is not loaded yet");
+                try { fbq("track", "Purchase", { value: 120, currency: "USD", content_name: "Course name" }); } catch (err) {}
             }
             var href = btn.getAttribute("href");
             if (href && btn.tagName === "A" && !e.defaultPrevented && !btn.target) {
