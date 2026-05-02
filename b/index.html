@@ -84,6 +84,7 @@
     </main>
     <script defer>
         !function () { var t = document.getElementById("countdown"); if (!t) return; var e = Date.now() + 1e3 * (parseInt(t.dataset.duration, 10) || 120), n = function (t) { return t < 10 ? "0" + t : "" + t }; !function o() { var a = e - Date.now(); if (a <= 0) { t.textContent = "00:00"; return } var r = Math.floor(a / 6e4), f = Math.floor(a / 1e3) % 60; t.textContent = n(r) + ":" + n(f); setTimeout(o, 1e3) }() }();
+  if(data.result&&"function"==typeof fbq)try{fbq("track","CompleteRegistration",{content_name:"Landing form",status:!0,currency:"UZS",value:0})}catch(t){console.warn("Pixel tracking skipped:",t)}
     </script>
 <!-- Meta Pixel Code -->
 <script defer>
