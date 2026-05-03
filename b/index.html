@@ -3,117 +3,87 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yashil Makon Baraka</title>
     <style>
-        html{font-size:calc(min(100vw, 390px) / 390 * 16)}*{padding:0;margin:0;box-sizing:border-box}body{font-family:sans-serif;background:linear-gradient(179.32deg,#063A28 .59%,#038056 99.41%);color:#fff}img{max-width:100%;height:auto;display:block}.webinar{max-width:390px;width:100%;margin:0 auto;text-align:center;padding-bottom:1.875rem}.webinar__head{display:flex;align-items:center;justify-content:space-between;padding:.5rem 1.25rem;border-bottom:1px solid #FED38B;margin-bottom:1.375rem}.webinar__date{display:flex;align-items:center;gap:.375rem}.webinar__icon{width:1.5625rem;height:1.5625rem}.webinar__time{font-family:"Poppins",sans-serif;font-size:1rem;color:#fff}.webinar__logo{width:1.75rem;height:2.125rem}.webinar__title{font-family:"Bebas Neue",sans-serif;font-size:2.25rem;font-weight:400;line-height:114%}.webinar__text{text-transform:uppercase;font-size:1.125rem;font-weight:500;line-height:120%;margin-bottom:34px;color:#FED38B}.webinar__hero{position:relative}.webinar__bg{position:absolute;left:50%;top:0;transform:translateX(-50%);width:100%;height:auto}.webinar__hero-content{position:relative;z-index:1}.webinar__speaker{display:flex;width:15.375rem;height:auto;margin:0 auto}.webinar__btn{display:flex;align-items:center;gap:.6875rem;padding:1.8125rem .625rem;background:#F4B758;box-shadow:0 .25rem 0 0 #D59D46,.9375rem .625rem .66875rem 0 #FFFFFF4D inset,-.9375rem -.75rem .74375rem 0 #FFFFFF40 inset;justify-content:center;border-radius:6.1875rem;font-family:"Bebas Neue",sans-serif;text-decoration:none;color:#0A4F37;font-weight:400;font-size:1.75rem;line-height:100%;letter-spacing:.04em;max-width:22.875rem;width:100%;margin:-3.4375rem auto 1.5rem;position:relative;z-index:1}.webinar__btn-icon{width:1.375rem;height:1.75rem}.webinar__countdown{font-family:"Buyan",sans-serif;font-weight:700;font-size:2.1875rem;line-height:114%;margin-bottom:1.375rem}.webinar__subtitle{font-weight:700;font-size:1.125rem;line-height:114%;text-transform:uppercase;margin-bottom:1.125rem}.webinar__list{list-style:none;display:flex;flex-direction:column;margin-left:auto;margin-right:auto;justify-content:center;align-items:center;gap:.5rem;text-align:left;max-width:315px;width:100%;margin:0 auto .75rem}.webinar__item{background-color:#008357;border:1px solid #FED38B;border-radius:1.125rem;padding:.9375rem 2.25rem;max-width:315px;width:100%;position:relative;min-height:4.625rem}.webinar__check{position:absolute;left:-6%;top:50%;transform:translateY(-50%);width:2.75rem;height:2.75rem}.webinar__benefit{line-height:140%;font-size:.875rem}@media (max-width:340px){.webinar__item{max-width:275px}}
+* { margin: 0; padding: 0; box-sizing: border-box } body { background-color: #ECE8E5 } .container { max-width: 440px; margin-left: auto; margin-right: auto; padding-left: 10px; padding-right: 10px } .header__container { max-width: 400px; margin-left: auto; margin-right: auto; background-color: #FFFDF4; box-shadow: 0 3px 4.6px 0 #00000017; padding: 14px 21px; display: flex; align-items: center; justify-content: space-between; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px } .header__row { display: flex; align-items: center; gap: 8px } .header__date { font-family: Poppins, sans-serif; font-weight: 500; font-size: 16px; line-height: 100%; text-align: center } .header__days { font-family: Montserrat, sans-serif; font-weight: 700; font-size: 18px; line-height: 100%; text-align: center } .hero { padding-top: 16px; padding-bottom: 35px } .hero__title { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: clamp(31px, 9.6vw, 42px); line-height: 110%; letter-spacing: 0%; text-align: center; text-transform: uppercase; } .hero__title span { color: #359A39 } .hero__text { font-family: Montserrat, sans-serif; font-weight: 400; font-size: clamp(9px, 2.9vw, 12px); line-height: 100%; text-align: center; text-transform: uppercase; margin-bottom: 8px; } .bg { position: absolute; left: 50%; transform: translateX(-50%); top: 240px; max-width: 440px; width: 100%; height: auto; z-index: -1; } .speaker { display: flex; align-items: center; height: auto; max-width: 246px; width: 100%; margin-left: auto; margin-right: auto; } .btn { font-family: "Bebas Neue", sans-serif; font-weight: 400; font-size: 30px; line-height: 100%; text-align: center; color: #fff; max-width: 350px; gap: 7px; text-decoration: none; width: 100%; display: flex; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; padding: 29px 0; background-color: #359A39; box-shadow: 0px 4px 0px 0px #1D5B20, 0px 4px 4px 0px #FFFFFF40 inset; border: none; border-radius: 100px; margin-top: -27px; position: relative; z-index: 11 } .timer-container { margin-top: 20px; margin-left: auto; margin-right: auto; display: flex; align-items: center; justify-content: center } .timer { font-family: Kuunari; font-weight: 700; font-size: 38px; line-height: 100%; text-align: center } .hero__inner { margin-top: 16px; margin-bottom: 40px } .inner__title { font-family: Kuunari, sans-serif; font-weight: 900; font-size: 34px; line-height: 105%; text-align: center; text-transform: uppercase; margin-bottom: 15px } .inner__row { max-width: 304px; width: 100%; display: flex; align-items: center; gap: 8px; margin-bottom: 16px; margin-left: auto; margin-right: auto } .inner__text { font-family: Montserrat, sans-serif; font-weight: 400; font-size: clamp(15px, 4vw, 16px); line-height: 130% }
     </style>
-    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./css/main.css" media="print" onload="this.media='all'" />
     <noscript>
-        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/main.css" />
     </noscript>
+
 </head>
 
 <body>
-    <main class="webinar">
-        <div class="webinar__head">
-            <div class="webinar__date">
-                <img class="webinar__icon" src="./images/Calendar.avif" alt="calendar" loading="lazy" decoding="async"
-                    width="25" height="25">
-                <p class="webinar__time">12-MAY</p>
+
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__row">
+                <img src="./images/calendar.png" width="18" height="18" loading="lazy" decoding="async" alt="calendar">
+                <p class="header__date">12-May</p>
             </div>
-            <img class="webinar__logo" src="./images/logo.avif" alt="logo" loading="lazy" decoding="async" width="28"
-                height="34">
-            <div class="webinar__date">
-                <img class="webinar__icon" src="./images/Clock.avif" alt="clock" loading="lazy" decoding="async"
-                    width="25" height="25">
-                <p class="webinar__time">20:00</p>
-            </div>
+            <p class="header__days">20:00</p>
         </div>
+    </header>
 
-        <h1 class="webinar__title">Guliston shahar markazidan</h1>
-        <p class="webinar__text">eng baland premium classdagi <br> Yashil makon loyihasidan eng katta <br> chegirmada
-            xonadon xarid qiling!</p>
+    <section class="hero">
+        <div class="hero__container container">
+            <p class="hero__text">Eng baland Premium classdagi Yashil makon loyihasidan</p>
 
-        <div class="webinar__hero">
-            <img class="webinar__bg" src="./images/bg.avif" alt="bg" loading="lazy" decoding="async" width="390"
-                height="442">
-            <div class="webinar__hero-content">
-                <img class="webinar__speaker" src="./images/speaker.avif" alt="speaker" loading="lazy" decoding="async"
-                    width="246" height="358">
-                <a class="webinar__btn webinar__btn--floating buybtn" href="https://t.me/+Lf9Hit18IlNkYjRi">
-                    TAQDIMOTdA QATNASHISH
-                    <img class="webinar__btn-icon" src="./images/btn-icon.avif" alt="icon" loading="lazy"
-                        decoding="async" width="22" height="28">
+            <h2 class="hero__title"><span>guliston shahar markazidan</span> <br>
+                katta chegirmada xonadon xarid qiling!</h2>
+            <div>
+                <img src="./images/speaker.avif" width="246" height="306" fetchpriority="high" decoding="async"
+                    alt="speaker" class="speaker">
+                <img class="bg" src="./images/bg.avif" loading="lazy" decoding="async" width="440" height="347"
+                    alt="bg">
+
+                <a class="btn" href="https://t.me/+Lf9Hit18IlNkYjRi">
+                    taqdimotda qatnashish
+                    <img src="./images/cursor.png" loading="lazy" decoding="async" width="17" height="21" alt="cursor">
                 </a>
             </div>
+            <div class="timer-container">
+                <p class="timer" id="timer">01:59</p>
+            </div>
+            <div class="hero__inner">
+                <div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+                    <img src="./images/logo.avif" loading="lazy" decoding="async" width="34" height="41" alt="logo">
+                    <h3 class="inner__title">Loyiha haqida:</h3>
+                </div>
+                <div class="inner__row">
+                    <img src="./images/verify.avif" width="35" height="35" loading="lazy" decoding="async" alt="verify">
+                    <p class="inner__text">Guliston shahrida <b>eng baland</b> loyiha</p>
+                </div>
+                <div class="inner__row">
+                    <img src="./images/verify.avif" width="35" height="35" loading="lazy" decoding="async" alt="verify">
+                    <p class="inner__text">2 qavatli savdo markazi, <b>ayollar</b> va <br> <b>erkaklar uchun</b> alohida
+                        Sport zali</p>
+                </div>
+                <div class="inner__row">
+                    <img src="./images/verify.avif" width="35" height="35" loading="lazy" decoding="async" alt="verify">
+                    <p class="inner__text"><b>"Tashkent City"</b> andozasidagi ulkan <br> markazlashgan <b>sayilgoh</b>
+                        va <b>park</b>
+                    </p>
+                </div>
+                <div class="inner__row">
+                    <img src="./images/verify.avif" width="35" height="35" loading="lazy" decoding="async" alt="verify">
+                    <p class="inner__text">Aholi uchun <b>maxsus poliklinika</b> <br> va <b>bank</b> xizmatlari
+                    </p>
+                </div>
+            </div>
+
+            <a class="btn" href="https://t.me/+Lf9Hit18IlNkYjRi">
+                taqdimotda qatnashish
+                <img src="./images/cursor.png" loading="lazy" decoding="async" width="17" height="21" alt="cursor">
+            </a>
         </div>
-        
-        <p class="webinar__countdown" id="countdown" data-duration="120">02:00</p>
-        <h2 class="webinar__subtitle">Loyihaning afzalliklari</h2>
-        <ul class="webinar__list">
-            <li class="webinar__item">
-                <img class="webinar__check" src="./images/check.avif" alt="check" loading="lazy" decoding="async"
-                    width="44" height="44">
-                <p class="webinar__benefit">Guliston shahrida eng baland <br> loyiha</p>
-            </li>
-            <li class="webinar__item">
-                <img class="webinar__check" src="./images/check.avif" alt="check" loading="lazy" decoding="async"
-                    width="44" height="44">
-                <p class="webinar__benefit">2 qavatli savdo markazi, ayollar va <br> erkaklar uchun alohida Sport zali
-                </p>
-            </li>
-            <li class="webinar__item">
-                <img class="webinar__check" src="./images/check.avif" alt="check" loading="lazy" decoding="async"
-                    width="44" height="44">
-                <p class="webinar__benefit">"Tashkent City" andozasidagi ulkan <br> markazlashgan sayilgoh va park</p>
-            </li>
-            <li class="webinar__item">
-                <img class="webinar__check" src="./images/check.avif" alt="check" loading="lazy" decoding="async"
-                    width="44" height="44">
-                <p class="webinar__benefit">Aholi uchun maxsus poliklinika <br> va bank xizmatlari</p>
-            </li>
-        </ul>
+    </section>
 
-        <a class="webinar__btn buybtn" href="https://t.me/+Lf9Hit18IlNkYjRi" style="margin: 0 auto 0;">
-            TAQDIMOTdA QATNASHISH
-            <img class="webinar__btn-icon" src="./images/btn-icon.avif" alt="icon" loading="lazy" decoding="async"
-                width="22" height="28">
-        </a>
-    </main>
-    <script>
-        !function () { var t = document.getElementById("countdown"); if (!t) return; var e = Date.now() + 1e3 * (parseInt(t.dataset.duration, 10) || 120), n = function (t) { return t < 10 ? "0" + t : "" + t }; !function o() { var a = e - Date.now(); if (a <= 0) { t.textContent = "00:00"; return } var r = Math.floor(a / 6e4), f = Math.floor(a / 1e3) % 60; t.textContent = n(r) + ":" + n(f); setTimeout(o, 1e3) }() }();
-
-        document.addEventListener("click", function (e) {
-            var btn = e.target.closest(".buybtn");
-            if (!btn) return;
-            if (typeof fbq === "function") {
-                try { fbq("track", "Purchase", { value: 120, currency: "USD", content_name: "Course name" }); } catch (err) {}
-            }
-            var href = btn.getAttribute("href");
-            if (href && btn.tagName === "A" && !e.defaultPrevented && !btn.target) {
-                e.preventDefault();
-                setTimeout(function () { window.location.href = href; }, 300);
-            }
-        });
+    <script defer>
+     !function(){var t=document.getElementById("timer");if(t){var n=119;o(),setInterval(function(){n=n>0?n-1:119,o()},1e3)}function e(t){return t<10?"0"+t:""+t}function o(){var o=Math.floor(n/60),r=n%60;t.textContent=e(o)+":"+e(r)}}();
     </script>
-<!-- Meta Pixel Code -->
-<script defer>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '852554297168061');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=852554297168061&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </body>
 
 </html>
