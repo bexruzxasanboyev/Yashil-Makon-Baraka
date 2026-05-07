@@ -112,23 +112,23 @@ src="https://www.facebook.com/tr?id=1929454487594012&ev=PageView&noscript=1"
     window.location.href = TG_LINK;
   }, true);
 })();
-(function(){
-  var TG_LINK = "https://t.me/+DyRFA7KIhNBkNDE6";
+document.querySelectorAll(".hero__btn").forEach(function(btn){
 
-  document.addEventListener("click", function(e){
+  btn.addEventListener("click", function(e){
+    e.preventDefault();
 
     fbq('track', 'Purchase', {
       value: 100000,
       currency: 'UZS'
     });
 
-    setTimeout(function(){
-      window.location.href = TG_LINK;
+    setTimeout(() => {
+      window.location.href = btn.href;
     }, 300);
 
-  }, true);
+  });
 
-})();
+});
 </script>
 </body>
 
