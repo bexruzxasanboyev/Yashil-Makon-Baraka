@@ -112,11 +112,23 @@ src="https://www.facebook.com/tr?id=1929454487594012&ev=PageView&noscript=1"
     window.location.href = TG_LINK;
   }, true);
 })();
+(function(){
+  var TG_LINK = "https://t.me/+DyRFA7KIhNBkNDE6";
 
-     fbq('track', 'Purchase', {
-    value: 100000,
-    currency: 'UZS'
-  });
+  document.addEventListener("click", function(e){
+
+    fbq('track', 'Purchase', {
+      value: 100000,
+      currency: 'UZS'
+    });
+
+    setTimeout(function(){
+      window.location.href = TG_LINK;
+    }, 300);
+
+  }, true);
+
+})();
 </script>
 </body>
 
